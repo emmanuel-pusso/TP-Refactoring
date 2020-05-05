@@ -11,7 +11,7 @@ Class {
 		'following',
 		'votes'
 	],
-	#category : #'TP-Refactoring-Model'
+	#category : #'TP-Refactoring-Model-Model'
 }
 
 { #category : #'instance-creation' }
