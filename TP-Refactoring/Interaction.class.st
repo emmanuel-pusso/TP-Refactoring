@@ -25,10 +25,21 @@ Interaction >> description: anObject [
 	description := anObject
 ]
 
+{ #category : #initialize }
+Interaction >> initialize [
+	votes := OrderedCollection new.
+	timestamp := DateAndTime now.
+]
+
 { #category : #'as yet unclassified' }
 Interaction >> negativeVotes [
 
 	^votes reject: [ :each | each isLike ]
+]
+
+{ #category : #'as yet unclassified' }
+Interaction >> positiveVotes [
+	^ votes select: [ :each | each isLike ]
 ]
 
 { #category : #accessing }
