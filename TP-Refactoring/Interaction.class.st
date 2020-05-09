@@ -10,6 +10,13 @@ Class {
 	#category : #'TP-Refactoring-Model-Model'
 }
 
+{ #category : #'instance creation' }
+Interaction class >> newWithUser: anUser [
+	^ self new
+		user: anUser;
+		yourself
+]
+
 { #category : #adding }
 Interaction >> addVote: aVote [
 	votes add: aVote

@@ -9,9 +9,8 @@ Class {
 
 { #category : #'instance creation' }
 Answer class >> new: anAnswer user: aUser question: aQuestion [
-	^ self new
+	^ (self newWithUser: aUser)
 		description: anAnswer;
-		user: aUser;
 		question: aQuestion;
 		yourself
 ]
