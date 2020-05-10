@@ -7,7 +7,7 @@ Class {
 		'votes',
 		'description'
 	],
-	#category : #'TP-Refactoring-Model-Model'
+	#category : #'TP-Refactoring-Model'
 }
 
 { #category : #'instance creation' }

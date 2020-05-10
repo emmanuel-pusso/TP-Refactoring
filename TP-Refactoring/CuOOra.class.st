@@ -6,7 +6,7 @@ Class {
 		'topics',
 		'questions'
 	],
-	#category : #'TP-Refactoring-Model-Model'
+	#category : #'TP-Refactoring-Model'
 }
 
 { #category : #adding }

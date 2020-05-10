@@ -6,7 +6,7 @@ Class {
 		'description',
 		'questions'
 	],
-	#category : #'TP-Refactoring-Model-Model'
+	#category : #'TP-Refactoring-Model'
 }
 
 { #category : #'intance creation' }
