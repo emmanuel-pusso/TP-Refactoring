@@ -8,9 +8,8 @@ Class {
 }
 
 { #category : #'instance creation' }
-Answer class >> new: anAnswer user: aUser question: aQuestion [
-	^ (self newWithUser: aUser)
-		description: anAnswer;
+Answer class >> new: aDescription user: aUser question: aQuestion [
+	^ (self newWithUser: aUser andDescription: aDescription)
 		question: aQuestion;
 		yourself
 ]

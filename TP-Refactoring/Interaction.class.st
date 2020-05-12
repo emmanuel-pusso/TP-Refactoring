@@ -11,9 +11,10 @@ Class {
 }
 
 { #category : #'instance creation' }
-Interaction class >> newWithUser: anUser [
+Interaction class >> newWithUser: anUser andDescription: aString [
 	^ self new
 		user: anUser;
+		description: aString;
 		yourself
 ]
 
@@ -40,8 +41,7 @@ Interaction >> initialize [
 
 { #category : #'as yet unclassified' }
 Interaction >> negativeVotes [
-
-	^votes reject: [ :each | each isLike ]
+	^ votes reject: [ :each | each isLike ]
 ]
 
 { #category : #'as yet unclassified' }

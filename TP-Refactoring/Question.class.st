@@ -11,20 +11,17 @@ Class {
 
 { #category : #'instance creation' }
 Question class >> newWithTitle: title description: aDescription user: aUser [
-	^(self
-		newWithUser: aUser)
+	^ (self newWithUser: aUser andDescription: aDescription)
 		title: title;
-		description: aDescription; yourself
+		yourself
 ]
 
 { #category : #'instance creation' }
 Question class >> newWithTitle: title description: aDescription user: aUser topic: aTopic [
-	^(self
-		newWithUser: aUser)
+	^ (self newWithUser: aUser andDescription: aDescription)
 		title: title;
-		description: aDescription;
 		addTopic: aTopic;
-		yourself.
+		yourself
 ]
 
 { #category : #adding }
