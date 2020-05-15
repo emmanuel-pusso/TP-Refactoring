@@ -5,6 +5,6 @@ Class {
 }
 
 { #category : #retrieving }
-QuestionRetrieverByNews >> getColection: aUser [
+QuestionRetrieverByNews >> getCollection: aUser [
 	^ self questionCreatedToday
 ]

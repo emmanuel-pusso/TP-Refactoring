@@ -34,12 +34,12 @@ QuestionRetriever >> getAllQuestions: aColection [
 ]
 
 { #category : #retrieving }
-QuestionRetriever >> getColection: aUser [
+QuestionRetriever >> getCollection: aUser [
 	^ self subclassResponsibility
 ]
 
 { #category : #private }
-QuestionRetriever >> getLastForColectionSortByPositiveVotes: aColection [
+QuestionRetriever >> getLastForCollectionSortByPositiveVotes: aColection [
 	^ (aColection
 		asSortedCollection: [ :a :b | a positiveVotes size > b positiveVotes size ])
 		last: (100 min: aColection size)
@@ -54,6 +54,6 @@ QuestionRetriever >> questionCreatedToday [
 { #category : #retrieving }
 QuestionRetriever >> retrieveQuestions: aUser [
 	^ (self
-		getLastForColectionSortByPositiveVotes: (self getColection: aUser))
+		getLastForCollectionSortByPositiveVotes: (self getCollection: aUser))
 		reject: [ :q | q user = aUser ]
 ]

@@ -11,10 +11,10 @@ Class {
 }
 
 { #category : #'instance creation' }
-Interaction class >> newWithUser: anUser andDescription: aString [
+Interaction class >> newWithUser: anUser andDescription: aDescription [ 
 	^ self new
 		user: anUser;
-		description: aString;
+		description: aDescription ;
 		yourself
 ]
 

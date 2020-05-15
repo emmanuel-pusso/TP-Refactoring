@@ -5,6 +5,6 @@ Class {
 }
 
 { #category : #retrieving }
-QuestionRetrieverBySocial >> getColection: aUser [
+QuestionRetrieverBySocial >> getCollection: aUser [
 	^ self getAllQuestions: aUser following
 ]

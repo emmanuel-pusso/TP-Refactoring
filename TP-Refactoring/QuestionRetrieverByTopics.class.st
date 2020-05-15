@@ -5,6 +5,6 @@ Class {
 }
 
 { #category : #retrieving }
-QuestionRetrieverByTopics >> getColection: aUser [
+QuestionRetrieverByTopics >> getCollection: aUser [
 	^ self getAllQuestions: aUser topics
 ]
