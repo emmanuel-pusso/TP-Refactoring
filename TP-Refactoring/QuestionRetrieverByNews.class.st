@@ -6,5 +6,5 @@ Class {
 
 { #category : #retrieving }
 QuestionRetrieverByNews >> getCollection: aUser [
-	^ self questionCreatedToday
+	^ cuoora questionCreatedToday
 ]

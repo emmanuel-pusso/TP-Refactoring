@@ -6,5 +6,5 @@ Class {
 
 { #category : #retrieving }
 QuestionRetrieverByPopularToday >> getCollection: aUser [
-	^ self filterByAverage: self questionCreatedToday
+	^ self filterByAverage: cuoora questionCreatedToday
 ]

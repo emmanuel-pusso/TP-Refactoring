@@ -32,11 +32,22 @@ CuOOra >> addUser: aUser [
 
 ]
 
+{ #category : #private }
+CuOOra >> averageVotes [
+^ (self questions sum: [ :q | q positiveVotes size ]) / self questionCreatedToday size.
+]
+
 { #category : #initialize }
 CuOOra >> initialize [
 	users := OrderedCollection new.
 	topics := OrderedCollection new.
 	questions := OrderedCollection new
+]
+
+{ #category : #accessing }
+CuOOra >> questionCreatedToday [
+	^ self questions
+		select: [ :each | each timestamp asDate = Date today ]
 ]
 
 { #category : #accessing }
